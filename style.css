@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .main{
+    width: 500px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section .main > img{
+    width: 100%;
+}
+section .main  .searchBx{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .main  .searchBx .input{
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 45px;
+    padding-right: 50px;
+    font-size: 16px;
+}
+section .main  .searchBx .input:hover,
+section .main  .searchBx .input:focus{
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+section .main  .searchBx .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    pointer-events: none;
+}
+section .main  .searchBx .icons img{
+    max-width: 100%;
+}
+
+
+.searchBtn{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin: 20px 5px 0;
+    padding: 12px 20px;
+    color: #777777;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.searchBtn:hover{
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px 0 rgb(32 33 36 / 28%);
+
+}
+
+html {
+    overflow: hidden;
+    background-image: url(https://img.freepik.com/premium-photo/dark-green-leaves-seamless-pattern-with-dark-structure-light-spots-colorful-wallpaper_647110-152.jpg);;
+}
+
+.searchBtn {
+    font-size: 14px;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.searchBtn:hover {
+    font-size: 16px;
+}
+
+.OthrBtn {
+    border-style: none;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 200%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.OtherButton {
+    text-align: right;
+}
+
+.OthrBtn {
+    font-size: 200%;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.OthrBtn:hover {
+    font-size: 220%;
+}
+
+@font-face {
+    font-family: PrdctSans;
+    src: url(/Fonts/ProductSansRegular.ttf);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Change this to match Google Apps font */
+  }
+  
+  main {
+    padding: 1rem;
+    width: 80vw; /* Set a fixed width for the main content area (80% of viewport) */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  .grid-wrapper {  background-color: #ffffff; /* White background for the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    padding: 1rem; /* Padding between box and grid */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box */
+    border: 7px solid #E6EBF2; /* Add border style, width, and color */
+    /*position: absolute;*/
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set 3 fixed columns */
+    grid-gap: 1rem; /* Spacing between icons */
+    width: 100%; /* Set full width for the grid container */
+    /* You can adjust the height here if needed */
+  }
+  
+  
+  .grid-item {
+    border: none; /* Remove default button border */
+    padding: 1rem; /* Adjust padding if needed */
+    background-color: transparent; /* Transparent background for icons */
+    border-radius: 25px; /* Adjusted corner radius for icons */
+    box-shadow: none; /* Remove shadow for icons */
+    cursor: pointer; /* Indicate clickable button */
+    text-align: center;
+    font-family: PrdctSans;
+    text-decoration: none;
+  }
+  
+  .grid-item img {
+    display: block; /* Ensure image fills container width */
+    width: 100%; /* Stretch image to fit container width */
+    max-width: 100%; /* Limit maximum width to container width */
+    max-height: 100%; /* Limit maximum height to prevent overflowing */
+    height: auto; /* Maintain image aspect ratio */
+    margin-bottom: 0.5rem; /* Add some space between image and label */
+  }
+  
+  .label {
+    font-size: 0.8rem; /* Adjust font size for label text */
+    color: #333; /* Text color */
+  }
+  
+  /* You can add hover effects here to highlight clickable items (optional) */
+  .grid-item:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight transparent background on hover */
+  }
+  
+  .grid-wrapper {
+    /* Existing styles */
+    max-width: 300px; /* Adjust as needed */
+    min-width: 280px;
+  }
